@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ky"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Админ панели</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="header"><a class="logo" href="admin.html">Smart <span>Bilim</span></a><nav class="nav"><a href="monitoring.html">Мониторинг</a><a href="teacher.html">Мугалим панели</a><button onclick="logout()">Чыгуу</button></nav></header>
+<main class="container">
+<section class="grid">
+<div class="stat"><strong id="usersCount">0</strong><p>Колдонуучу</p></div>
+<div class="stat"><strong id="resultsCount">0</strong><p>Жыйынтык</p></div>
+<div class="stat"><strong>8</strong><p>Предмет</p></div>
+</section>
+<section class="card" style="margin-top:20px"><h2>Админ панели</h2><p>Админ бардык бөлүмдөрдү көрө алат.</p></section>
+</main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script><script src="js/auth.js"></script><script src="js/app.js"></script>
+<script>protectPage(['admin']); loadAdminStats();</script>
+</body></html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ky"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Тест — Smart Bilim</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="header"><a class="logo" href="student.html">Smart <span>Bilim</span></a><nav class="nav"><a href="student.html">Окуучу панели</a><button onclick="logout()">Чыгуу</button></nav></header>
+<main class="container">
+<section class="card">
+<h2>Тест тапшыруу</h2>
+<div class="grid two">
+<div><label>Класс</label><select id="grade" onchange="loadQuiz()"><option value="5">5-класс</option><option value="6">6-класс</option><option value="7">7-класс</option><option value="8">8-класс</option><option value="9">9-класс</option></select></div>
+<div><label>Предмет</label><select id="subject" onchange="loadQuiz()"><option value="informatics">Информатика</option><option value="math">Математика</option><option value="kyrgyz">Кыргыз тили</option><option value="russian">Орус тили</option><option value="english">Англис тили</option><option value="geography">География</option><option value="biology">Биология</option><option value="chemistry">Химия</option></select></div>
+</div>
+<p><b>Таймер:</b> <span id="timer">20:00</span></p>
+<div id="quiz"></div>
+<div id="result" class="result hidden"></div>
+</section>
+</main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script><script src="js/auth.js"></script><script src="js/questions.js"></script><script src="js/app.js"></script>
+<script>protectPage(['student']); loadQuiz(); startTimer(20);</script>
+</body></html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ky"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Кирүү — Smart Bilim</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html">Smart <span>Bilim</span></a>
+  <nav class="nav" id="mainNav">
+    <a href="index.html">Башкы бет</a>
+    <a href="login.html">Кирүү</a>
+    <a href="register.html">Катталуу</a>
+  </nav>
+</header>
+
+<main class="container">
+<div class="card" style="max-width:520px;margin:auto">
+<h2>Системага кирүү</h2>
+<label>Email</label><input id="email" type="email" placeholder="email@example.com">
+<label>Пароль</label><input id="password" type="password" placeholder="Пароль">
+<button class="btn blue" onclick="login()">Кирүү</button>
+<p>Аккаунт жокпу? <a href="register.html" style="color:#93c5fd">Катталуу</a></p>
+<div id="msg" class="notice hidden"></div>
+</div>
+</main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script><script src="js/auth.js"></script>
+</body></html>

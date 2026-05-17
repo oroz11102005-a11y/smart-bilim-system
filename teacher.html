@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ky"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Мугалим панели</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="header"><a class="logo" href="teacher.html">Smart <span>Bilim</span></a><nav class="nav"><a href="monitoring.html">Мониторинг</a><button onclick="logout()">Чыгуу</button></nav></header>
+<main class="container">
+<section class="card">
+<h2>Мугалим панели</h2>
+<p>Мугалим окуучулардын жыйынтыгын көрүп, Excel файл кылып жүктөй алат.</p>
+<a class="btn blue" href="monitoring.html">Мониторинг көрүү</a>
+</section>
+</main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script><script src="js/auth.js"></script>
+<script>protectPage(['teacher','admin']);</script>
+</body></html>
